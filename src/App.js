@@ -1,11 +1,12 @@
 import './App.scss';
+import './index.css';
 import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <div className='main-wrapper'>
+      <Home style={{width:"inherit"}}/>
+    </div>
   );
 }
 

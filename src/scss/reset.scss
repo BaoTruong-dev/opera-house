@@ -141,9 +141,17 @@ body {
   margin: auto;
   background: $white-cl;
   position: relative;
+  font-family: 'gt',sans-serif;
   font-size: $text-normal;
   .main-wrapper {
     max-width: 1440px;
     margin: auto;
   }
+}
+
+.container{
+  padding-left: 120px;
+  padding-right: 120px;
+  margin: 0 auto;
+  width: 100%; 
 }
