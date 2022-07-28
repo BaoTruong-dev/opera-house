@@ -2,9 +2,10 @@
 
 .header {
   @include flexCenter(space-between);
-  background-color: #ccc;
+  background-color: transparent;
   height: 120px;
   position: sticky;
+  z-index: 1;
   top: 0;
   left: 0;
     a{
@@ -40,7 +41,7 @@
         width: 100%;
       }
     }
- 
+   
   }
   &-center {
     @include flexCenter(space-between);
@@ -49,6 +50,7 @@
       color: $white-cl;
       font-size: $text-small;
       position: relative;
+      padding-bottom: 5.5px;
       &::before {
         content: attr(title);
         position: absolute;
@@ -65,7 +67,7 @@
         display: block;
         position: absolute;
         width: 0;
-        height: 1px;
+        height: 0.8px;
         bottom: 0;
         right: 0;
         top: 20px;
@@ -73,13 +75,18 @@
         transition: 1.5s all;
       }
       &:hover::after {
-        left: -10%;
-        width: 120%;
+        left:0;
+        width: 100%;
       }
       &:hover::before {
         width: 100%;
       }
     }
+    .header-active{
+      color: $primary-cl;
+      border-bottom: 1px solid $primary-cl;
+    }
+ 
   }
   &-right {
     &-search {
@@ -118,7 +125,7 @@
           border: 1px solid $primary-cl;
           border-top: 0px !important;
         }
-        &:focus + svg,&:valid+ svg {
+        &:focus ~ svg,&:valid~ svg {
           * {
             fill: $primary-cl;
           }
@@ -138,7 +145,6 @@
         left: 0;
         width: 16px;
         height: 16px;
-        // padding-left: 20px;
         margin-left: 16px;
       }
     }
