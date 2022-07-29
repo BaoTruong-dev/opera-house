@@ -1,6 +1,5 @@
 import React from "react";
 import "./SliderItem.scss";
-
 export default function SliderItem({name, time, date, content, nextName,image}) {
 
   return (
@@ -31,8 +30,14 @@ export default function SliderItem({name, time, date, content, nextName,image}) 
               />
             </svg>
           </button>
+        
         </div>
-     
+        <div className="sliderItem-link">
+            <a href="#">Facebook</a>
+            <a href="#">Gmail</a>
+            <a href="#">Youtube</a>
+            
+          </div>
          <div className="sliderItem-next">
          <span className="sliderItem-next-text">Next show</span>
          <span className="sliderItem-next-name">{nextName}</span>

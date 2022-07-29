@@ -2,6 +2,8 @@
 
 .sliderItem {
   position: relative;
+  padding-right: 120px;
+
   &-next {
     display: flex;
     flex-direction: column;
@@ -46,6 +48,7 @@
       line-height: 30px;
       margin-top: 24px;
     }
+  
     button {
       border: 1px solid $white-cl;
       margin-top: 70px;
@@ -69,5 +72,18 @@
         }
       }
     }
+  }
+  &-link{
+   display: flex;
+   gap:32px;
+   position: absolute;
+   top:50%;
+   right: 120px;
+   transform: translateY(-50%) rotate(90deg);
+   right: 0;
+   a{
+    text-decoration: none;
+    color: $white-cl;
+   }   
   }
 }
