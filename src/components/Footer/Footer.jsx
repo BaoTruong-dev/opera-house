@@ -20,45 +20,45 @@ import partner8_8 from "../../assets/images/partner8-8.png";
 
 import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
+import TextStroke from "../TextStroke/TextStroke";
 export default function Footer() {
   return (
     <div className="footer container">
       <div className="partner">
-        <span>Partner</span>
-
+        <TextStroke stroke="Partner" />
         <div className="partner-list">
           <div className="partner-list-item">
-            <img src={partner1} alt="" className="img-partner"/>
-            <img src={partner1_1} alt="" className="img-color"/>
+            <img src={partner1} alt="" className="img-partner" />
+            <img src={partner1_1} alt="" className="img-color" />
 
           </div>
           <div className="partner-list-item">
-          <img src={partner2} alt="" className="img-partner"/>
-            <img src={partner2_2} alt="" className="img-color"/>
+            <img src={partner2} alt="" className="img-partner" />
+            <img src={partner2_2} alt="" className="img-color" />
           </div>
           <div className="partner-list-item">
-          <img src={partner3} alt="" className="img-partner"/>
-            <img src={partner3_3} alt="" className="img-color"/>
+            <img src={partner3} alt="" className="img-partner" />
+            <img src={partner3_3} alt="" className="img-color" />
           </div>
           <div className="partner-list-item">
-          <img src={partner4} alt="" className="img-partner"/>
-            <img src={partner4_4} alt="" className="img-color"/>
+            <img src={partner4} alt="" className="img-partner" />
+            <img src={partner4_4} alt="" className="img-color" />
           </div>
           <div className="partner-list-item">
-          <img src={partner5} alt="" className="img-partner"/>
-            <img src={partner5_5} alt="" className="img-color"/>
+            <img src={partner5} alt="" className="img-partner" />
+            <img src={partner5_5} alt="" className="img-color" />
           </div>
           <div className="partner-list-item">
-          <img src={partner6} alt="" className="img-partner"/>
-            <img src={partner6_6} alt="" className="img-color"/>
+            <img src={partner6} alt="" className="img-partner" />
+            <img src={partner6_6} alt="" className="img-color" />
           </div>
           <div className="partner-list-item">
-          <img src={partner7} alt="" className="img-partner"/>
-            <img src={partner7_7} alt="" className="img-color"/>
+            <img src={partner7} alt="" className="img-partner" />
+            <img src={partner7_7} alt="" className="img-color" />
           </div>
           <div className="partner-list-item">
-          <img src={partner8} alt="" className="img-partner"/>
-            <img src={partner8_8} alt="" className="img-color"/>
+            <img src={partner8} alt="" className="img-partner" />
+            <img src={partner8_8} alt="" className="img-color" />
           </div>
         </div>
       </div>

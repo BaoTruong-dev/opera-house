@@ -5,12 +5,13 @@
   background-color: transparent;
   height: 120px;
   position: sticky;
-  z-index: 1;
+  z-index: 9;
   top: 0;
   left: 0;
-    a{
-        text-decoration: none;
-    }
+  opacity: 0;
+  a {
+    text-decoration: none;
+  }
   &-left {
     font-family: "gt" !important;
     @include flexCenter(space-between);
@@ -41,7 +42,6 @@
         width: 100%;
       }
     }
-   
   }
   &-center {
     @include flexCenter(space-between);
@@ -75,18 +75,17 @@
         transition: 1.5s all;
       }
       &:hover::after {
-        left:0;
+        left: 0;
         width: 100%;
       }
       &:hover::before {
         width: 100%;
       }
     }
-    .header-active{
+    .header-active {
       color: $primary-cl;
       border-bottom: 1px solid $primary-cl;
     }
- 
   }
   &-right {
     &-search {
@@ -108,8 +107,9 @@
         &:valid {
           outline: none;
         }
-        
-        &:focus+ span ,&:valid+ span{
+
+        &:focus + span,
+        &:valid + span {
           color: $primary-cl;
           transform: translateX(-50%) translateY(-50%);
           left: 50%;
@@ -121,11 +121,13 @@
           letter-spacing: 1px;
           padding: 0 5px !important;
         }
-        &:focus,&:valid  {
+        &:focus,
+        &:valid {
           border: 1px solid $primary-cl;
           border-top: 0px !important;
         }
-        &:focus ~ svg,&:valid~ svg {
+        &:focus ~ svg,
+        &:valid ~ svg {
           * {
             fill: $primary-cl;
           }

@@ -1,21 +1,17 @@
 @import "../../scss/import.scss";
 .footer {
   height: 1024px;
-  background-image: url("../../assets/images/partner_bg.png");
+  background: url("../../assets/images/partner_bg.png") no-repeat center center;
+  background-size: cover;
   padding-top: 50px;
   padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-attachment: fixed;
   .partner {
     display: flex;
     flex-direction: column;
-    gap: 82px;
-    span {
-      font-size: 48px;
-      color: $primary-cl;
-      font-weight: 700;
-    }
     &-list {
       display: grid;
 

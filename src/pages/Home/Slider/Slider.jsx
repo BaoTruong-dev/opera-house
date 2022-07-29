@@ -1,16 +1,18 @@
 import React from "react";
 import SliderItem from "../../../components/SliderItem/SliderItem";
 import "./Slider.scss";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, EffectCreative } from "swiper";
 import "swiper/scss/navigation";
 import "swiper/scss";
 import "swiper/css/effect-creative";
-
 import imageSlide1 from "../../../assets/images/slider1.png";
 import imageSlide2 from "../../../assets/images/slider2.png";
-
+import gsap from 'gsap-trial';
+import ScrollSmoother from 'gsap-trial/dist/ScrollSmoother';
+import ScrollTrigger from 'gsap-trial/dist/ScrollTrigger';
+import { useEffect } from "react";
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 SwiperCore.use([Navigation]);
 
 const data = [
@@ -35,6 +37,8 @@ const data = [
 ];
 
 export default function Slider() {
+  useEffect(() => {
+  }, []);
   return (
     <div className="slider">
       <Swiper
@@ -55,7 +59,7 @@ export default function Slider() {
         navigation
         grabCursor={"true"}
         loop={"true"}
-    
+
       >
         {data.map((item, index) => {
           return (
