@@ -17,21 +17,23 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 180px 180px;
       &-item {
-        border: 1px solid #fcf0c8;
+        border: 1px solid $primary-cl;
         margin: 0 -1px -1px 0;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+        overflow: hidden;
         .img-partner {
           position: absolute;
           pointer-events: none;
+          z-index: 4;
         }
         .img-color {
           position: absolute;
           opacity: 0;
-          visibility: 0;
           transition: all 1s;
+          z-index: 4;
           &:hover {
             opacity: 1;
             visibility: 1;
@@ -99,6 +101,7 @@
         }
       }
     }
+
     &-icon {
       display: flex;
       gap: 32px;
