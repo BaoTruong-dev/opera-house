@@ -2,6 +2,7 @@ import React from 'react';
 import arrow from '../../assets/svg/arrow.svg';
 import './CarouselItem.scss';
 export default function CarouselItem({ name, src, date }) {
+    console.log(arrow);
     return (
         <div className='carousel-item'>
             <p className="carousel-item__name">

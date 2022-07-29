@@ -5,6 +5,7 @@
   //   min-height: 1024px;
   background: url("../../../assets/images/history_bg.png") center center
     no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   &__wrapper {
     display: grid;
@@ -16,6 +17,7 @@
       height: 100%;
       .img {
         cursor: pointer;
+        opacity: 0;
       }
       .img:nth-child(1) {
         position: absolute;
