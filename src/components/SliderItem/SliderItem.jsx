@@ -20,8 +20,10 @@ export default function SliderItem({
             <span>{date}</span>
           </div>
           <span className="sliderItem-info-name">{name}</span>
-          <p className="sliderItem-info-content">{content}</p>
-          <button>
+          <p className="sliderItem-info-content">
+            {content}
+          </p>
+          <button className="sliderItem-info-button">
             <span>Buy Ticket</span>
             <svg
               width="19"

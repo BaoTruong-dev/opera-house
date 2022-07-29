@@ -29,7 +29,6 @@
           position: absolute;
           pointer-events: none;
           z-index: 4;
-          
         }
         .img-color {
           position: absolute;
@@ -113,7 +112,7 @@
 }
 
 @keyframes rotate {
-  100%{
+  100% {
     transform: rotate(-360deg);
   }
 }
