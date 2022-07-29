@@ -8,18 +8,7 @@
       display: none;
     }
     .swiper-button-next {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 2px solid #b4b4b4;
-      object-fit: cover;
-      position: absolute;
-      top: 960px !important;
-      right: 120px;
-      opacity: 0;
-      &::after {
-        content: "";
-      }
+      display: none;
     }
   }
 }
