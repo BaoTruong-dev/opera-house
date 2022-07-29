@@ -55,6 +55,7 @@ export default function Slider() {
             translate: ["100%", 0, 0],
           },
         }}
+        keyboard
         navigation
         grabCursor={"true"}
         loop={"true"}
