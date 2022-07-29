@@ -15,7 +15,11 @@
     "react-scripts": "5.0.1",
     "react-vanilla-tilt": "^1.0.0",
     "sass": "^1.54.0",
+<<<<<<< HEAD
+    "swiper": "^8.3.2",
+=======
     "vanilla-tilt": "^1.7.2",
+>>>>>>> master
     "web-vitals": "^2.1.4"
   },
   "scripts": {
