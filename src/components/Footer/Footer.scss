@@ -22,27 +22,53 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 180px 180px;
       &-item {
-        border: 1px solid #fcf0c8;
+        border: 1px solid $primary-cl;
         margin: 0 -1px -1px 0;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+        overflow: hidden;
         .img-partner {
           position: absolute;
           pointer-events: none;
+          z-index: 4;
+          
         }
         .img-color {
           position: absolute;
           opacity: 0;
-          visibility: 0;
           transition: all 1s;
+          z-index: 4;
           &:hover {
             opacity: 1;
             visibility: 1;
           }
         }
-      
+        &:hover::before{
+          content: "";
+          background-image: conic-gradient(
+            $primary-cl 20deg,
+            transparent 120deg
+          );
+       
+          height: 150%;
+          width: 150%;
+          position: absolute;
+          left: -20%;
+          top:-10%;
+          z-index: 2;
+          animation: rotate 2s infinite linear;
+        }
+       &:hover::after{
+          content: "";
+          height: 96%;
+          width: 98%;
+          position: absolute;
+          background-color:#181818;
+          z-index: 3;
+          opacity: 1;
+        }
       }
     }
   }
@@ -87,5 +113,11 @@
       gap: 32px;
       align-items: center;
     }
+  }
+}
+
+@keyframes rotate {
+  100%{
+    transform: rotate(-360deg);
   }
 }
