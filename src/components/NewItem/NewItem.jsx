@@ -2,6 +2,7 @@ import React from 'react';
 import './NewItem.scss';
 import vecto from '../../assets/svg/vector.svg';
 export default function NewItem({ title, content, src }) {
+
     return (
         <div className='new-item'>
             <div className="new-item__img">

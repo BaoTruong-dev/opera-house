@@ -54,7 +54,7 @@ export default function Slider() {
         navigation
         grabCursor={"true"}
         loop={"true"}
-    
+
       >
         {data.map((item, index) => {
           return (

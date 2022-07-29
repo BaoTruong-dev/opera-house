@@ -1,12 +1,11 @@
 import React from 'react';
+import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import About from './About/About';
 import Carousel from './Carousel/Carousel';
+import History from './History/History';
 import News from './News/News';
 import Slider from './Slider/Slider';
-import History from './History/History';
-import About from './About/About';
-import Partner from './Partner/Partner';
-import Footer from '../../components/Footer/Footer';
 
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
             <News />
             <About />
             <History />
-            <Partner />
             <Footer />
         </div>
     );
