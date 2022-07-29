@@ -37,6 +37,30 @@
             visibility: 1;
           }
         }
+        &:hover::before {
+          content: "";
+          background-image: conic-gradient(
+            $primary-cl 20deg,
+            transparent 120deg
+          );
+
+          height: 150%;
+          width: 150%;
+          position: absolute;
+          left: -20%;
+          top: -10%;
+          z-index: 2;
+          animation: rotate 2s infinite linear;
+        }
+        &:hover::after {
+          content: "";
+          height: 96%;
+          width: 98%;
+          position: absolute;
+          background-color: #181818;
+          z-index: 3;
+          opacity: 1;
+        }
       }
     }
   }
@@ -75,7 +99,6 @@
         }
       }
     }
-
     &-icon {
       display: flex;
       gap: 32px;
