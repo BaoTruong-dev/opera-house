@@ -22,3 +22,5 @@ export default function CarouselItem({ name, src, date }) {
         </div>
     );
 }
+
+
