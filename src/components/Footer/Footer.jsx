@@ -16,8 +16,6 @@ import partner5_5 from "../../assets/images/partner5-5.png";
 import partner6_6 from "../../assets/images/partner6-6.png";
 import partner7_7 from "../../assets/images/partner7-7.png";
 import partner8_8 from "../../assets/images/partner8-8.png";
-
-
 import logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import TextStroke from "../TextStroke/TextStroke";
