@@ -139,10 +139,13 @@ body {
   width: 100%;
   -webkit-font-smoothing: antialiased;
   margin: auto;
-  background: $white-cl;
+  background: $grey-cl;
+  color: $white-cl;
   position: relative;
   font-family: 'gt',sans-serif;
   font-size: $text-normal;
+  font-family: sans-serif;
+  font-weight: 400;
   .main-wrapper {
     max-width: 1440px;
     margin: auto;
