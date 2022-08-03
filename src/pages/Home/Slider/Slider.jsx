@@ -55,8 +55,9 @@ export default function Slider() {
             translate: ["100%", 0, 0],
           },
         }}
+
         keyboard
-        navigation
+        navigation={{ nextEl: '.nextEl' }}
         grabCursor={"true"}
         loop={"true"}
 
@@ -76,6 +77,6 @@ export default function Slider() {
           );
         })}
       </Swiper>
-    </div>
+    </div >
   );
 }

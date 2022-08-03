@@ -56,8 +56,7 @@ export default function SliderItem({
             <path
               d="M6.35288e-05 9.00003L14.5861 9.00003L9.29306 14.293L10.7071 15.707L18.4141 8.00003L10.7071 0.293028L9.29306 1.70703L14.5861 7.00003L6.37037e-05 7.00003L6.35288e-05 9.00003Z"
               fill="#B4B4B4"
-            className="nextEl"
-
+              className="nextEl"
             />
           </svg>
         </div>
